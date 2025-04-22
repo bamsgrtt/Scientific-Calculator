@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.calculator.CalculatorController"
+            stylesheets="@style.css" prefWidth="480" prefHeight="600">
+
+    <TextField fx:id="display" layoutX="10" layoutY="10" prefWidth="380" prefHeight="60" minWidth="380" minHeight="60" maxWidth="60" maxHeight="60"
+               styleClass="display-field"/>
+
+    <GridPane layoutX="14.0" layoutY="80" hgap="14.0" vgap="14.0" prefWidth="380" prefHeight="360">
+        <columnConstraints>
+            <ColumnConstraints hgrow="ALWAYS" prefWidth="70"/>
+            <ColumnConstraints hgrow="ALWAYS" prefWidth="70"/>
+            <ColumnConstraints hgrow="ALWAYS" prefWidth="70"/>
+            <ColumnConstraints hgrow="ALWAYS" prefWidth="70"/>
+        </columnConstraints>
+
+        <rowConstraints>
+            <RowConstraints vgrow="ALWAYS" prefHeight="70"/>
+            <RowConstraints vgrow="ALWAYS" prefHeight="70"/>
+            <RowConstraints vgrow="ALWAYS" prefHeight="70"/>
+            <RowConstraints vgrow="ALWAYS" prefHeight="70"/>
+            <RowConstraints vgrow="ALWAYS" prefHeight="70"/>
+        </rowConstraints>
+
+        <!-- Row 1 -->
+        <Button text="7" styleClass="calc-button" onAction="#handleButtonClick" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"/>
+        <Button text="8" styleClass="calc-button" onAction="#handleButtonClick" GridPane.rowIndex="0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"/>
+        <Button text="9" styleClass="calc-button" onAction="#handleButtonClick" GridPane.rowIndex="0" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"/>
+        <Button text="/" styleClass="calc-button" onAction="#handleButtonClick" GridPane.rowIndex="0" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"/>
+
+        <!-- Row 2 -->
+        <Button text="4" styleClass="calc-button" onAction="#handleButtonClick" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"/>
+        <Button text="5" styleClass="calc-button" onAction="#handleButtonClick" GridPane.rowIndex="1" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"/>
+        <Button text="6" styleClass="calc-button" onAction="#handleButtonClick" GridPane.rowIndex="1" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"/>
+        <Button text="*" styleClass="calc-button " onAction="#handleButtonClick" GridPane.rowIndex="1" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"/>
+
+        <!-- Row 3 -->
+        <Button text="1" styleClass="calc-button" onAction="#handleButtonClick" GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"/>
+        <Button text="2" styleClass="calc-button" onAction="#handleButtonClick" GridPane.rowIndex="2" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"/>
+        <Button text="3" styleClass="calc-button" onAction="#handleButtonClick" GridPane.rowIndex="2" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"/>
+        <Button text="-" styleClass="calc-button" onAction="#handleButtonClick" GridPane.rowIndex="2" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"/>
+
+        <!-- Row 4 -->
+        <Button text="0" styleClass="calc-button" onAction="#handleButtonClick" GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"/>
+        <Button text="C" styleClass="calc-button" onAction="#handleButtonClick" GridPane.rowIndex="3" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"/>
+        <Button text="=" styleClass="calc-button" onAction="#handleButtonClick" GridPane.rowIndex="3" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"/>
+        <Button text="+" styleClass="calc-button" onAction="#handleButtonClick" GridPane.rowIndex="3" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"/>
+
+        <!-- Row 5 -->
+        <Button text="sin" styleClass="calc-button " onAction="#handleButtonClick" GridPane.rowIndex="4" GridPane.columnIndex="0" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"/>
+        <Button text="cos" styleClass="calc-button " onAction="#handleButtonClick" GridPane.rowIndex="4" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"/>
+        <Button text="tan" styleClass="calc-button " onAction="#handleButtonClick" GridPane.rowIndex="4" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"/>
+        <Button text="^" styleClass="calc-button " onAction="#handleButtonClick" GridPane.rowIndex="4" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"/>
+    </GridPane>
+</AnchorPane>

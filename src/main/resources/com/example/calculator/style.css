@@ -1,0 +1,82 @@
+/* style.css */
+
+/* Background dasar */
+.root {
+    -fx-background-color: linear-gradient(to bottom right, #0f172a, #1e3a8a);
+    -fx-font-family: "Segoe UI", "Roboto", "Arial", sans-serif;
+}
+
+/* Display / layar input */
+.display-field {
+    -fx-font-size: 24px;
+    -fx-background-color: #1e293b;
+    -fx-border-color: #334155;
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 5, 0, 0, 2);
+    -fx-text-alignment:right;
+    -fx-alignment: CENTER_RIGHT;
+    -fx-text-fill: white;
+}
+
+/* Tombol umum */
+.calc-button {
+    -fx-pref-width: 85px;
+    -fx-pref-height: 80px;
+    -fx-max-width: Infinity;
+    -fx-max-height: Infinity;
+    -fx-font-size: 24px;
+    -fx-background-color: #1e293b;
+    -fx-text-fill: white;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-border-color: #334155;
+    -fx-border-width: 1px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 3, 0, 0, 2);
+    -fx-transition: background-color 0.3s ease;
+}
+
+.calc-button:hover {
+    -fx-background-color: #334155;
+}
+
+/* Tombol angka */
+.calc-button.number {
+    -fx-background-color: #f9fbfd;
+    -fx-text-fill: white;
+    -fx-pref-width: 100px;
+    -fx-pref-height: 100px;
+}
+
+/* Tombol operator */
+.calc-button.operator {
+    -fx-background-color: #deeafc;
+    -fx-text-fill: white;
+}
+
+/* Tombol fungsi (sin, cos, tan) */
+.calc-button.function {
+    -fx-background-color: #dff7f4;
+    -fx-text-fill: white;
+}
+
+/* Tombol clear */
+.calc-button.clear {
+    -fx-background-color: #ffe0e0;
+    -fx-text-fill: white;
+}
+
+/* Tombol sama dengan */
+.calc-button.equals {
+    -fx-background-color: #2563eb;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+/* Efek klik */
+.calc-button:pressed {
+    -fx-background-color: #cbd5e1;
+}
